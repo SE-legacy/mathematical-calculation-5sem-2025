@@ -7,20 +7,5 @@
 #show figure.where(kind: image): set figure(supplement: "Рис.")
 #show figure.where(kind: table): set figure(supplement: "Табл.")
 
-#let i = 1
-
-#{
-  let numbering = ""
-  if details.sections.numbering {
-    if details.sections.prefix.len() > 0 {
-      numbering += details.sections.prefix + " "
-    }
-    numbering += "1.1. "
-  }
-  for section in details.sections.sections {
-    heading(eval(section, mode: "markup"), numbering: numbering, hanging-indent: 0pt)
-    include strfmt("sections/{:02}.typ", i)
-    pagebreak(weak: true)
-    i += 1
-  }
-}
+#include "sections/01.typ"
+#include "sections/02.typ"
