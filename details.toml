@@ -1,4 +1,4 @@
-subject = "Название предмета"
+subject = "Вычислительная математика"
 description = "Лекции"
 term = 5 # номер семестра
 authors = [
@@ -23,8 +23,9 @@ authors = [
 numbering = true
 prefix = "Лекции"
 sections = [
-  "1.",
-  "2.",
-  "3."
+  "",
+  "",
+  "",
+  "",
 ]
 
